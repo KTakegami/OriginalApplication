@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SignupController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/SelfManagerTop', function() {
+    return view('index');
+});
+
+//アカウントログインページ
+Route::get('/SelfManagerLogin', 'LoginController@login');
+//ログイン後の処理
+Route::post('/loginConp','LoginController@post');
+
+// アカウント登録ページ
+Route::get('/SelfManagerSignup', 'SignupController@signup');
+//アカウント登録ページで入力した値のルーティング処理
+Route::post('/conplete', 'SignupController@post');
+
+Route::get('/CalendarTop', 'CalendarController@top');
+
+Route::get('/ToDoTop', 'ToDoTopController@top');
+

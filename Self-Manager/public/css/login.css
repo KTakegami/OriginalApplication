@@ -1,0 +1,74 @@
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn a {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.link a:nth-child(2) {
+    color: red;
+}
+
+.link a:nth-child(2):hover {
+    color: rebeccapurple;
+}
+
+.forgot-password {
+    width: 100%;
+}
+
+.forgot-password a {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ここからモーダル */
+.modal {
+    display: none;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-container {
+    background-image: url('../img/662429254.jpg');
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.modal-container input {
+    width: 100%;
+}
+
+button.continue {
+    background-color: aqua;
+}
+
+#close {
+    color: red;
+    display: block;
+
+}

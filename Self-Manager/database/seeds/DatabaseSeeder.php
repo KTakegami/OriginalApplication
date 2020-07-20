@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        // usersテーブルのseederを呼び出し
+        $this->call(UsersTableSeeder::class);
+
+        //loginsテーブルのseederを呼び出し
+        $this->call(LoginsTableSeeder::class);
     }
 }
